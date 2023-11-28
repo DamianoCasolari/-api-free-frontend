@@ -67,7 +67,7 @@ export default {
 }
 </script>
 <template>
-    <section class="index_section position-relative">
+    <section class="index_section">
 
         <div class="add_post position-fixed end-0 z-3 m-3 border border-3 px-2 rounded-3 fw-bold">
             <router-link :to="{ name: 'create' }">Add post</router-link>

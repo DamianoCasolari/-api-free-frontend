@@ -11,7 +11,7 @@ export default {
 <template>
     <div class="Web_page">
         <appHeader />
-        <main class="h-100">
+        <main>
             <router-view></router-view>
         </main>
     </div>

@@ -69,7 +69,7 @@ export default {
 }
 </script>
 <template>
-    <section class="index_section position-relative h-100">
+    <section class="index_section position-relative">
 
         <div class="add_post position-fixed end-0 z-3 m-3 border border-3 px-2 rounded-3 fw-bold">
 

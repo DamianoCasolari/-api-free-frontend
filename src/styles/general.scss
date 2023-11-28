@@ -14,9 +14,15 @@
 
 
 .Web_page {
-    min-height: 100vh;
+    min-height: 100vh !important;
     font-family: 'Raleway', sans-serif !important;
     overflow-y: hidden;
+
+
+main{
+    min-height: calc(100vh - 100px);
+}
+
 }
 
 
