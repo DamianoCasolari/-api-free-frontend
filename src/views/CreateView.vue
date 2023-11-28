@@ -15,7 +15,7 @@ export default {
             'content': null,
             'published': false,
             'categoryId': false,
-            'success':false
+            'success': false
         }
     },
     components: {
@@ -69,9 +69,9 @@ export default {
 }
 </script>
 <template>
-    <section class="index_section position-relative">
+    <section class="index_section">
 
-        <div class="add_post position-fixed end-0 z-3 m-3 border border-3 px-2 rounded-3 fw-bold">
+        <div class="add_post position-absolute end-0 z-3 m-3 border border-3 px-2 rounded-3 fw-bold">
 
             <router-link :to="{ name: 'home' }">Return home Page</router-link>
         </div>
@@ -91,8 +91,8 @@ export default {
                 </div>
                 <div class="d-flex flex-column p-3">
                     <label for="content">Insert the content of your new post</label>
-                    <textarea name="content" id="content" cols="30" rows="5"
-                        placeholder="Inserisci il contenuto del post" class="form-control input_text" v-model="content" required></textarea>
+                    <textarea name="content" id="content" cols="30" rows="5" placeholder="Inserisci il contenuto del post"
+                        class="form-control input_text" v-model="content" required></textarea>
                     <small :key="error" class="text-danger">{{ error }}</small>
                 </div>
                 <div class="d-flex justify-content-between p-3">
@@ -123,7 +123,8 @@ export default {
                 </div>
 
             </form>
-
+            <div class="Success_warning h-100 w-100 d-flex justify-content-center align-items-center" v-else> Your new post
+                has been added successfully</div>
         </div>
 
     </section>
