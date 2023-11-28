@@ -1,0 +1,32 @@
+.index_section {
+    height: calc(100% - 100px);
+    overflow-x: auto;
+    background-image: url("../../public/img/bg-post.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.single_post {
+    height: 100% !important;
+    background-color: rgba(240, 248, 255, 0.693);
+    min-height: 200px;
+    display: inline-block;
+    margin: 0 15px 0px 15px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    border: 1px solid var(--cl-street);
+    filter: drop-shadow(10px 10px 10px var(--cl-street));
+    border-radius: 25px;
+    padding: 30px;
+
+   
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+
+
+
+

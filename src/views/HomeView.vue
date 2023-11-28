@@ -3,7 +3,7 @@
 import axios from "axios";
 
 export default {
-    name: "appHome",
+    name: "HomeView",
 
     data() {
         return {
@@ -21,7 +21,6 @@ export default {
             axios.get(url).then(response => {
                 console.log(response);
                 this.posts = response.data.data;
-                this.loading = false;
 
             }).catch(error => {
                 console.log(error);
@@ -68,7 +67,11 @@ export default {
 }
 </script>
 <template>
-    <section class="index_section">
+    <section class="index_section position-relative">
+
+        <div class="add_post position-fixed end-0 z-3 m-3 border border-3 px-2 rounded-3 fw-bold">
+            <router-link :to="{ name: 'create' }">Add post</router-link>
+        </div>
 
         <div id="album_rotator_holder" class="d-flex position-relative scrollable-container p-5 h-100">
 
@@ -76,10 +79,9 @@ export default {
             <article class=" single_post col-9 col-md-5 col-xxl-3 rounded-4" v-for=" post, index in  posts " v-show="post.published" >
                 <div
                     class="album_details fs_card d-flex flex-column h-100 p-3 position-relative z-2 ">
-                        <div class="brand fw-semibold strong_text_shadow"> {{ post.title }}
+                        <div class="fs-3 fw-bold"> {{ post.title }}
                         </div>
-                        <div class="model fw-semibold strong_text_shadow">{{ post.model }} </div>
-                        <div class="year strong_text_shadow" style="white-space: wrap;">
+                        <div class="content fw-semibold">
                             <span>{{ post.content }}</span>
                         </div>
                 </div>

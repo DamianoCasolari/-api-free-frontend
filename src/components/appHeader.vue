@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <header class="shadow">
+    <header class="shadow z-2">
         <div class=" d-flex justify-content-center align-items-center py-2 h-100" >
             <img src="../../public/img/shadowLogos.png" alt="logo image" class="h-100 me-2">
             <div class="d-flex flex-column">

@@ -1,19 +1,19 @@
 <script>
 import appHeader from './components/appHeader.vue'
-import appHome from './components/appHome.vue'
 
 export default {
     components: {
-        appHeader,
-        appHome
-    }
+        appHeader
+        }
 }
 </script>
 
 <template>
     <div class="Web_page">
         <appHeader />
-        <appHome />
+        <main class="h-100">
+            <router-view></router-view>
+        </main>
     </div>
 </template>
 

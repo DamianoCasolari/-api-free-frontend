@@ -1,45 +1,22 @@
+@use "./partials/header.scss" as *;
+@use "./partials/indexPage.scss" as *;
+@use "./partials/createPage.scss" as *;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Poppins:wght@300;400;500&family=Great+Vibes&family=Satisfy&display=swap');
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+:root {
+    --cl-street: rgb(49, 49, 49);
+    --cl-night: rgb(36, 17, 144);
+    --cl-dirty-snow: rgb(231, 231, 231);
+}
+
+
 .Web_page {
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif !important;
     overflow-y: hidden;
 }
 
-header {
-    height: 100px;
-filter: drop-shadow(10px 10px 10px black);
-}
-
-.index_section {
-    height: calc(100% - 100px);
-    overflow-x: auto;
-    background-image:url("../../public/img/bg-post.jpg");
-    background-position: bottom;
-    background-size: cover;
-}
-
-.single_post {
-    height: 100% !important;
-    background-color: aliceblue;
-    min-height: 200px;
-    display: inline-block;
-    margin: 0 15px 0px 15px;
-    overflow: hidden;
-    transition-duration: 0.8s;
-    border: 1px solid black;
-    filter: drop-shadow(10px 10px 10px black);
-
-    &:hover img {
-        width: 110%;
-        height: 110%;
-        transform: translateY(-5%);
-    }
-
-}
-
-.grabbing {
-    cursor: grabbing;
-}
 

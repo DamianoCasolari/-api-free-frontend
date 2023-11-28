@@ -1,0 +1,23 @@
+.add_post {
+
+    border-color: var(--cl-dirty-snow) !important;
+    filter: drop-shadow(2px 6px 10px var(--cl-street));
+    transition-duration: 0.4s;
+    top: 95px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+
+    a {
+        text-decoration: none !important;
+        color: var(--cl-dirty-snow);
+    }
+}
+
+
+header {
+    height: 100px;
+    filter: drop-shadow(10px 10px 10px black);
+}
