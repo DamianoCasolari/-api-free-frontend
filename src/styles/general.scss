@@ -1,2 +1,45 @@
-// Import all of Bootstrap's CSS
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Poppins:wght@300;400;500&family=Great+Vibes&family=Satisfy&display=swap');
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+.Web_page {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif !important;
+    overflow-y: hidden;
+}
+
+header {
+    height: 100px;
+filter: drop-shadow(10px 10px 10px black);
+}
+
+.index_section {
+    height: calc(100% - 100px);
+    overflow-x: auto;
+    background-image:url("../../public/img/bg-post.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.single_post {
+    height: 100% !important;
+    background-color: aliceblue;
+    min-height: 200px;
+    display: inline-block;
+    margin: 0 15px 0px 15px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    border: 1px solid black;
+    filter: drop-shadow(10px 10px 10px black);
+
+    &:hover img {
+        width: 110%;
+        height: 110%;
+        transform: translateY(-5%);
+    }
+
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
